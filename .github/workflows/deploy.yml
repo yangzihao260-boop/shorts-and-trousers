@@ -1,4 +1,4 @@
-name: Deploy shorts and trousers to Pages
+name: Deploy with Bun
 
 on:
   push:
@@ -15,14 +15,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
+          bun-version: latest
       - name: Install dependencies
-        run: npm install
+        run: bun install
       - name: Build
-        run: npm run build
+        run: bun run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
