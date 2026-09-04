@@ -1,4 +1,4 @@
-name: Deploy Jellyfish to Pages
+name: Deploy shorts and trousers to Pages
 
 on:
   push:
