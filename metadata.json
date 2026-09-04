@@ -1,0 +1,6 @@
+{
+  "name": "Trousers & Shorts English Game",
+  "description": "An interactive falling-pants educational game for elementary school English learning, distinguishing between trousers and shorts with audio feedback, multiple speeds, and teaching modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

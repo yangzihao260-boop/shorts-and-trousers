@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-kids {
+  font-family: 'Fredoka', 'Plus Jakarta Sans', cursive, sans-serif;
+}
+
+@keyframes rewardFloat {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10%) scale(0.6);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  40% {
+    transform: translate(-50%, -65%) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -110%) scale(0.98);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -140%) scale(0.9);
+  }
+}
+
+.animate-reward-float {
+  animation: rewardFloat 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes skyCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-clouds {
+  animation: skyCloud 60s linear infinite;
+}
